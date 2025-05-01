@@ -1,0 +1,20 @@
+.skill-container
+{
+    padding: 100px;
+    background: linear-gradient(45deg, red, yellow);
+    color: black;
+}
+
+
+.icon-box
+{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+h3
+{
+    font-size: 30px;
+}

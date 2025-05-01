@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@theme {
+  --font-poppins: "Poppins", sans-serif; 
+}
+
+body
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    color: orangered;
+}
+
+
+.main-container
+{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    /* background: linear-gradient(to right, #800020, #1E1E1E); */
+    background: linear-gradient(to right, black 70%, orangered 30%);
+    
+   
+}
+
+.text-container {
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    width: 100%;
+    /* animation: typing 3s steps(40, end) forwards, blink 0.7s infinite; */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+.main p 
+{
+    gap: 5px;
+    font-size: 60px;
+    
+}
+
+
+
+.introductory
+{
+    font-size: 30px;
+    position: relative;
+    left: 850px;
+}
+
+strong
+{
+    color: #76e6ff;
+    background: linear-gradient(135deg, #ffa200, #ff5500);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.socials
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.socials .button{
+    height: 50px;
+    font-size: 20px;
+    width: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 50px 50px 50px 50px;
+    font-weight: 700;
+    border: none;
+}
+
+.socials .button:nth-child(1),
+.socials .button:nth-child(2)
+{
+  background-color: red;
+}
+
+.socials .button:hover
+{
+    transform: scale(1.05);
+    background: linear-gradient(135deg,#62cff4,#ff8b0f);
+    color: black;
+}
+
+
+.social-logo
+{
+    position: relative;
+    top: 13px;
+    left: 15px;
+}
+
+.img-container
+{
+    display: flex;
+    flex-direction: column;
+     position: relative;
+    right: 150px;
+    gap: 30px;
+}
+
+.wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .custom-border {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .wrapper::before,
+  .wrapper::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    left: 0;
+  }
+
+ 
+  .wrapper::before {
+    top: 0;
+    background: linear-gradient(to right, red 40%, black 60%);
+  }
+
+  
+  .wrapper::after {
+    bottom: 0;
+    background: linear-gradient(to right, red 40%, black 60%);
+  }
+
+  .left-border, .right-border {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+  }
+
+  .left-border {
+    left: 0;
+    background: red;
+  }
+
+  .right-border {
+    right: 0;
+    background: black;
+  }
+
+.tp
+{
+    
+    height: 300px;
+    width: 300px;
+      animation: expand 3s ease-in-out  infinite alternate ;
+     
+
+
+}
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes expand 
+{
+  0% {border-radius: 50%;}
+  
+  100%{border-radius: 0%;}
+}

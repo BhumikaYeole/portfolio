@@ -1,0 +1,65 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .navbar-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(45deg,yellow,red);
+  }
+  
+  /* Keep your navbar styles the same */
+  .navbar {
+    display: flex;
+    height: 8vh;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .name
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: linear-gradient(135deg,#62cff4,#ff8b0f);
+  }
+
+  .by
+  {
+    display: block;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .navbar-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+  }
+
+  .navbar-items:hover
+  {
+    cursor:pointer;
+
+  }
+
+  .nav-row
+  {
+    height:  10px;
+    background-color: white;
+  }
+
+  
+  
+  
+  

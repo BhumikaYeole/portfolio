@@ -1,0 +1,135 @@
+.edu-container {
+    padding: 40px 100px;
+    background-color: black;
+    color: white;
+}
+
+.edu-container h1 {
+    font-size: 36px;
+    color: orangered;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.educard-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* .images {
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
+    padding-top: 90px;
+}
+
+.images img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    
+    
+} */
+
+.deco {
+    padding-top: 130px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.dot {
+    font-size: 30px;
+    color: orangered;
+}
+
+.v-line {
+    width: 3px;
+    height: 100px;
+    background-color: orangered;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.educard {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 20px;
+    width: 600px;
+    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-left: 5px solid orangered;
+}
+
+.educard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 69, 0, 0.2);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.clg {
+    font-size: 20px;
+    color: orangered;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.details {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+.details svg {
+    color: orangered;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.educard-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Match this with deco gap */
+}
+
+.deco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px; /* Match card gap */
+    margin-top: 15px;
+}
+
+.dot {
+    font-size: 26px;
+    color: orangered;
+}
+
+.v-line {
+    width: 3px;
+    height: 100px; /* Match cards gap */
+    background-color: orangered;
+}
