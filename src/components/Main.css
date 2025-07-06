@@ -22,7 +22,6 @@ body
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    /* background: linear-gradient(to right, #800020, #1E1E1E); */
     background: linear-gradient(to right, black 70%, orangered 30%);
     
    
