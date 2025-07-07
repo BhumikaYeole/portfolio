@@ -3,17 +3,16 @@ body {
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  
-  .navbar-container {
+}
+
+.navbar-container {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(45deg,yellow,red);
-  }
-  
-  /* Keep your navbar styles the same */
-  .navbar {
+    background: linear-gradient(45deg, yellow, red);
+}
+
+.navbar {
     display: flex;
     height: 8vh;
     justify-content: space-around;
@@ -21,45 +20,167 @@ body {
     color: black;
     font-weight: 600;
     font-size: 20px;
-  }
+}
 
-  .name
-  {
+.navbar-respo {
+    display: none;
+}
+
+.name {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    color: linear-gradient(135deg,#62cff4,#ff8b0f);
-  }
+    color: linear-gradient(135deg, #62cff4, #ff8b0f);
+}
 
-  .by
-  {
+.by {
     display: block;
     height: 40px;
     width: 40px;
-  }
-  
-  .navbar-items {
+}
+
+.navbar-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
     gap: 40px;
-  }
+}
 
-  .navbar-items:hover
-  {
-    cursor:pointer;
+.navbar-items:hover {
+    cursor: pointer;
+}
 
-  }
-
-  .nav-row
-  {
-    height:  10px;
+.nav-row {
+    height: 10px;
     background-color: white;
-  }
+}
 
-  
-  
-  
-  
+.navbar-respo button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.navbar-respo button:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-items {
+        display: none;
+    }
+    
+    .name {
+        padding-right: 150px;
+    }
+    
+    .navbar-respo {
+        display: block;
+    }
+    
+    .items-hidden {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        background: #1a1a1a;
+        color: #fff;
+        z-index: 999;
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .cross-btn {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-self: flex-end;
+        background: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+        margin-bottom: 20px;
+        transition: transform 0.2s ease;
+    }
+    
+    .cross-btn:hover {
+        transform: rotate(90deg);
+    }
+    
+    .items-respo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        background: #1a1a1a;
+        color: #fff;
+        z-index: 999;
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .list-respo {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .list-respo li {
+        font-size: 15px;
+        margin: 15px 0;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateX(20px);
+        transition: all 0.3s ease-in-out;
+    }
+    
+   
+    .items-respo .list-respo li {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .items-respo .list-respo li:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+    
+    .items-respo .list-respo li:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+    
+    .items-respo .list-respo li:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+    
+    .items-respo .list-respo li:nth-child(4) {
+        transition-delay: 0.4s;
+    }
+    
+    .items-respo .list-respo li:nth-child(5) {
+        transition-delay: 0.5s;
+    }
+    
+    .list-respo li:hover {
+        transform: translateX(10px);
+        color: orangered;
+    }
+}
