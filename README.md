@@ -4,6 +4,10 @@ This is my personal portfolio website built using **React** and **Vite**. It sho
 
 ---
 
+# Work in Progress! 
+
+---
+
 ## 🚀 Tech Stack
 
 - **React** – Frontend JavaScript library
